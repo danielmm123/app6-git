@@ -1,0 +1,381 @@
+<!doctype html>
+<html>
+<head>
+ <meta charset="utf-8">
+ <title>Tercera Aplicacion</title>
+
+  <!--grupo CSS-->
+  <link rel="stylesheet" href="css/app4.css">
+  <link rel="stylesheet"  href="css/jquery.mobile.icons-1.4.5.min.css"/>
+  <link rel="stylesheet"  href="css/jquery.mobile.structure-1.4.5.min.css"/> 
+  <!--grupo JavaScript-->
+  <script src="js/jquery-1.11.2.min.js"></script>
+  <script src="js/jquery.mobile-1.4.5.min.js"></script>
+  <script src="js/acciones.js"></script>
+  <script src="phonegap.js"></script>
+  <script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+  </script>
+  
+  <!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+  
+ </head>
+
+ <body onLoad="MM_preloadImages('imagenes/batalla5.2.jpg','imagenes/porfirio.jpg')"> 
+ 
+    <div data-role="page" id="Principal" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-black-btn-txt="Regresar" data-back-btn-theme="b">
+     <h1>BATALLA DE PUEBLA</h1>
+ </div>
+   
+   <!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/origen2.jpg" alt="origen2" title="origen2" id="wows1_0"/></li>
+		<li><img src="data1/images/batalla4.2.png" alt="batalla4.2" title="batalla4.2" id="wows1_1"/></li>
+		<li><img src="data1/images/batalla5.jpg" alt="batalla5" title="batalla5" id="wows1_2"/></li>
+		<li><img src="data1/images/batalla4.jpg" alt="batalla4" title="batalla4" id="wows1_3"/></li>
+		<li><img src="data1/images/batalla5.2.jpg" alt="batalla5.2" title="batalla5.2" id="wows1_4"/></li>
+		<li><img src="data1/images/ignacio.jpg" alt="ignacio" title="ignacio" id="wows1_5"/></li>
+		<li><a href="http://wowslider.com"><img src="data1/images/monumento1.jpg" alt="wowslider.com" title="monumento1" id="wows1_6"/></a></li>
+		<li><img src="data1/images/origen4.jpg" alt="origen4" title="origen4" id="wows1_7"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="origen2"><span><img src="data1/tooltips/origen2.jpg" alt="origen2"/>1</span></a>
+		<a href="#" title="batalla4.2"><span><img src="data1/tooltips/batalla4.2.png" alt="batalla4.2"/>2</span></a>
+		<a href="#" title="batalla5"><span><img src="data1/tooltips/batalla5.jpg" alt="batalla5"/>3</span></a>
+		<a href="#" title="batalla4"><span><img src="data1/tooltips/batalla4.jpg" alt="batalla4"/>4</span></a>
+		<a href="#" title="batalla5.2"><span><img src="data1/tooltips/batalla5.2.jpg" alt="batalla5.2"/>5</span></a>
+		<a href="#" title="ignacio"><span><img src="data1/tooltips/ignacio.jpg" alt="ignacio"/>6</span></a>
+		<a href="#" title="monumento1"><span><img src="data1/tooltips/monumento1.jpg" alt="monumento1"/>7</span></a>
+		<a href="#" title="origen4"><span><img src="data1/tooltips/origen4.jpg" alt="origen4"/>8</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com">wowslider.com</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+
+ <div data-role="main" class="ui-content">
+     <div data-role="collapsible" data-content-theme="false">
+      <h1>Batalla del 4 de Mayo</h1>
+       <div>
+        <p>Imagenes de la batalla de Atlixco</p>
+       </div>
+       <div>
+       <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('9','','imagenes/batalla4.2.png',0)"><img src="imagenes/batalla4.jpg" width="400" height="AUTO" id="9"></a>
+       </div>
+     </div>
+ </div>
+    
+<div data-role="main" class="ui-content">
+    <div data-role="collapsible" data-content-theme="false">
+      <h1>Batalla del 5 de Mayo</h1>
+       <div>
+        <p>Imagenes de la batalla de Puebla</p>
+       </div>
+       <div>
+        <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('imagen2','','imagenes/batalla5.2.jpg',1)"><img src="imagenes/batalla5.jpg" width="400" height="303" id="imagen2"></a></div>
+     </div>
+    </div>
+     <div data-role="main" class="ui-content">
+     <div data-role="collapsible" data-content-theme="false">
+      <h1>Heroes de la Batalla de Puebla</h1>
+       <div>
+        <p>imagenes delos heroes de la batalla de puebla</p>
+       </div>
+       <div>
+        <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('imagene3','','imagenes/porfirio.jpg',1)"><img src="imagenes/ignacio.jpg" width="auto" height="250" id="imagene3"></a></div>
+     </div>
+ </div>
+    <div>
+     <ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+     <li class="ui-first-child ui-last-child">
+       <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>Origen de la batalla de Puebla</h2>
+        <p>¿por que los franceses atacaron a México?</p>
+       </a>
+     </li>
+     <li class="ui-first-child ui-last-child">
+       <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>Monumentos</h2>
+        <p>¿Hay monumentos en honor a la batalla del 5 de mayo?</p>
+       </a>
+     </li>
+     <li class="ui-first-child ui-last-child">
+       <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>Museos de la Batalla del 5 de Mayo</h2>
+        <p>¿en donde se encuentran?</p>
+       </a>
+     </li>
+     <li class="ui-first-child ui-last-child">
+       <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>Heroes de La Batalla</h2>
+        <p>¿Quienes fueron los Heroes de la gran batalla?</p>
+       </a>
+     </li>
+      <li class="ui-first-child ui-last-child">
+       <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+        <h2>Leyendas sobre la Batalla de Puebla</h2>
+       </a>
+     </li>
+     </ul>
+    </div>
+    
+    <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+      <div>
+        <img src="res/android/mdpi.png" width="46" height="46">
+      </div>
+      <div>
+       <h4>Aplicacion Batalla de Puebla</h4>
+       <h4>Daniel Muñoz Mojica</h4>
+      </div>
+     </div>
+ </div>
+     
+     
+      
+ <div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+       <h1>Origen de la Batalla de Puebla</h1>
+      </div>
+      <div data-role="content" align="center">
+      </div>
+      <center>   
+       <p>En 1862, el país estaba en bancarrota debido a medio siglo de conflictos y guerras casi constantes. No podía hacer frente ni a las necesidades más urgentes, por lo que el 17 de julio de 1861, el presidente Benito Juárez decretó prórroga de dos años para pagar deuda externa a países europeos. En octubre de 1861, Francia, Inglaterra y España se suscribieron a la Convención de Londres y se comprometieron a enviar militares a México para reclamar sus derechos como acreedores por una deuda que ascendía alrededor de 80 millones de pesos. Aproximadamente 69 millones eran para los ingleses, 9 millones para los españoles y 2 millones para Francia. Se negaron a negociar, por la vía diplomática, los términos y condiciones en los que se pagaría la deuda posteriormente. Así que Napoleón III, gobernante de Francia, decidió invadir México para establecer una monarquía favorable a Europa, surtirse de materias primas y en un futuro extender su imperialismo a Estados Unidos. Con ese fin, debía disolver el Gobierno mexicano establecido por el Presidente Benito Juárez.<br>
+
+En abril de 1862 los franceses desembarcaron en el puerto de Veracruz, y emprendieron la campaña militar hacia el centro de la República. Después de varios ataques el 5 de mayo de 1862 se dio la batalla que tuvo lugar en el cerro de Loreto, en cuya cima se encontraba una capilla acondicionada como fuerte para defender la ciudad de Puebla. El héroe de la primera batalla de Puebla fue el general Ignacio Zaragoza al mando de casi 2000 soldados y 2700 campesinos usando machetes y lanzas llamadas "chinacas" de madera con punta de metal. Los franceses usaban pistolas, carabinas con punta de metal, bayonetas y cañones. El informe que el general Zaragoza rindió sobre la Batalla de Puebla al presidente Benito Juárez fue breve y significativo.</p>
+       <img src="imagenes/origen1.jpg" width="515" height="220" alt="a">
+   </center>
+   
+      <div data-role="main" class="ui-content" align="center">
+      <div style="width:40%;">
+      <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+        <li class="ui-first-child ui-last-child">
+        <a href="https://es.wikipedia.org/wiki/Batalla_de_Puebla" data-role="button">
+         <h2>Fuente de Info.</h2>
+         </a>
+         </li>
+         </ul>
+         </div>
+         </div>
+         
+     <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+      <div>
+        <img src="res/android/mdpi.png" width="46" height="46">
+      </div>
+      <div>
+       <h4>Aplicacion Seis, DMM</h4>
+      </div>
+     </div>
+     </div>
+     <div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+       <h1>Monumento a la Batalla de Puebla</h1>
+      </div>
+      <div data-role="content" align="center">
+      </div>
+      <center>   
+       <p>En Puebla,  ciudad de leyendas e inmensa riqueza cultural, encontramos un caleidoscopio de edificaciones, texturas e interacciones que se entremezclan para regalarnos un mosaico de la actual cultura poblana. Dentro de éste marco, al noreste del zócalo se encuentra un complejo que agrupa diversos espacios para la cultura, educación y recreación; sitio que alberga al “Monumento Emblemático” del 150 Aniversario de la Batalla de Puebla.<br>
+       A través de la historia, monumentos se han erigido para recordar a las nuevas generaciones de los sucesos pasados que definen los tiempos actuales. Tipificados comúnmente como objetos escultóricos, nuestra propuesta busca fomentar las relaciones entre la continuidad del espacio público y potencializar el sitio, mediante la creación de espacios plurales de convivencia, así como el aprovechamiento de las vistas que otorga el emplazamiento. 
+
+Formalmente, la idea de monumento es abstraída para diseñar un espacio que va de lo abierto a lo cerrado, de la escultura vertical a la horizontal; impulsando la convivencia a través de los intersticios que surgen de la elevación premeditada de niveles. <br>
+Semblanza artificial de la topografía original, la superposición de ésta capa superior brinda a los visitantes un parque con movimientos ondulantes que logra generar diferentes ambientes. La superficie se divide en áreas jardinadas, deck de madera y areneros; dicha división permite su multiplicidad, en cuanto a usos se refiere. 
+
+Paralelamente el contexto, rico en vegetación, se convierte en parte de la propuesta. Los árboles del sitio se asoman por sobrias perforaciones que les permiten coexistir con la intervención. <br>
+Como parte de las estrategias sustentables, se plantean 3 puntos a desarrollar dentro del proyecto:
+
+1. Las aguas pluviales serán recolectadas y almacenadas en tanques para su uso durante todo el año. Esto asegurará que los requerimientos de agua de la propuesta puedan prescindir al máximo de la red municipal de agua.
+2. El drenaje será diseñado para reciclar las aguas grises para su uso en retretes e irrigación. Un sistema de filtración y tratamiento proporcionará agua pura para su consumo y para la limpieza personal.
+3. El almacenamiento térmico podría eliminar el gasto energético en las horas pico, y trasladarlo a horarios donde el costo es menor. Las azoteas contaran con aislamiento térmico lo que contribuye a mitigar la temperatura en los espacios interiores y la carga de enfriamiento en caso de necesitarlo y funciona además como un efectivo aislante, reduciendo la carga de calentamiento durante el invierno.  </p>
+       <img src="imagenes/monumento2.jpg" width="400" height="auto" alt="aa">
+       <img src="imagenes/monumento1.jpg" width="500" height="auto" alt="b">
+      </center>
+      
+      
+      <div data-role="main" class="ui-content" align="center">
+      <div style="width:40%;">
+      <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+        <li class="ui-first-child ui-last-child">
+        <a href="http://www.archdaily.mx/mx/02-217021/monumento-emblematico-del-150-aniversario-de-la-batalla-de-puebla-ten-arquitectos" data-role="button">
+         <h2>Fuente de Info.</h2>
+         </a>
+         </li>
+         </ul>
+         </div>
+         </div>
+         
+   
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+    <div>
+        <img src="res/android/mdpi.png" width="46" height="46">
+      </div>
+      <div>
+       <h4>Aplicacion Seis, DMM</h4>
+      </div>
+     </div>
+     </div>
+      
+      
+ <div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+       <h1>Museos sobre la Batalla de Puebla</h1>
+      </div>
+      <div data-role="content" align="center">
+      </div>
+      <center>   
+       <p>*Museo Interactivo de la Batalla de Puebla 5 de Mayo*</p>
+       <p>En la zona de los Fuertes se encuentra el Museo Interactivo de la Batalla de Puebla 5 de Mayo, un recinto que ofrece a los visitantes una nueva experiencia al aprender la historia de esta gesta heroica con tecnología de punta.<br>
+       A lo largo de 7.5 hectáreas se encuentran tres módulos, en primera instancia el público se registra en la recepción con sus datos personales y correo electrónico, donde se le otorga una pulsera con un código de barras para ser utilizado en el recorrido.<br>
+       El módulo A don las causas de origen de la Batalla, donde un holograma de indio Zacapoaxtla narra los antecedentes de la batalla y además se encuentra una exposición temporal de títeres de la compañía Rosete Aranda que muestra escenarios importantes. <br>
+       El módulo B es de Acciones Militares, en éste se muestra el esquema defensivo de Ignacio Zaragoza y el ataque de los franceses, a través de cartografías y el croquis original que explica las horas y el desarrollo de la gesta histórica, además del organigrama del Ejército de Oriente y el Ejército Francés.<br>
+       En la última sala, los asistentes se encontrarán con pantallas touch, ahí serán dotados de información del armamento, bandera y figuras de los actores del 5 de Mayo, a través de un escáner, el visitante se le enviará la información al correo electrónico que dieron al inicio del recorrido.<br>
+       El Museo Interactivo 5 de Mayo inició funciones en 2012 con el festejo del 150 aniversario de la Batalla de Puebla y a la fecha ha logrado llevar exposiciones a Estados Unidos. 
+
+</p>
+<img src="imagenes/museo1.jpg" width="400" height="auto" align alt="a">
+</center>
+<div data-role="main" class="ui-content" align="center">
+      <div style="width:40%;">
+      <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+        <li class="ui-first-child ui-last-child">
+        <a href="http://www.pueblanoticias.com.mx/noticia/visite-el-museo-interactivo-de-la-batalla-de-puebla-5-de-mayo-70293/" data-role="button">
+         <h2>Fuente de Info.</h2>
+         </a>
+         </li>
+         </ul>
+         </div>
+         </div>
+   
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+    <div>
+        <img src="res/android/mdpi.png" width="46" height="46">
+      </div>
+      <div>
+       <h4>Aplicacion Seis, DMM</h4>
+      </div>
+     </div>
+     </div>
+       
+ <div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+       <h1>Heroes de la Batalla</h1>
+      </div>
+      <div data-role="content" align="center">
+      </div>
+      <center>   
+      <img src="imagenes/ignacio.jpg" width="300" height="auto" alt="a">
+<p>
+Gral divn.gif General de División
+Años de servicio	1853-1862
+Lealtad	Bandera Histórica de la República Mexicana (1824-1918).svg México
+Participó en	
+Revolución de Ayutla: Guerra de Reforma:
+Batalla de Silao
+Batalla de Calpulalpan
+Segunda Intervención Francesa en México:
+Batalla de Las Cumbres
+Batalla de Puebla
+[editar datos en Wikidata]
+Ignacio Zaragoza nació en el poblado de La Bahía del Espíritu Santo, en el estado de Coahuila y Texas, hoy Goliad. Fue el segundo hijo de Miguel Zaragoza Valdés, de Veracruz, y María de Jesús Seguin Martínez, de San Antonio de Béxar, esta última pariente de Juan José Erasmo Seguin. Cuando los rebeldes texanos, apoyados por los Estados Unidos de América, ganaron la Guerra de independencia de Texas, Miguel Zaragoza, que era soldado de infantería, se mudó con su familia desde la ciudad Presidio de La Bahía de Espíritu Santo (hoy Goliad, Texas), donde había nacido su hijo Ignacio, a la ciudad de Matamoros en 1834, y posteriormente, en 1844, a la ciudad de Monterrey, donde Ignacio entró al seminario, estudios que abandonó en 1846, convencido de que no tenía vocación sacerdotal.<br>
+uando las fuerzas francesas de Napoleón III invadieron México para imponer como emperador a Maximiliano de Habsburgo, Zaragoza, con el rango de general y al mando del Ejército de Oriente, las enfrentó en Acultzingo en la llamada Batalla de Las Cumbres, el 28 de abril de 1862, siendo obligado a retroceder. Zaragoza comprendió la posición defensiva y favorable que tenía la ciudad de Puebla, paso obligado para ir a la Ciudad de México.
+
+Al amanecer del 5 de mayo de 1862, el Gral. Ignacio Zaragoza arenga a sus soldados: "Nuestros enemigos son los primeros soldados del mundo, pero vosotros sois los primeros hijos de México y os quieren arrebatar vuestra patria". Ordena a Miguel Negrete dirigir la defensa por la izquierda; a Felipe Berriozábal por la derecha y a Porfirio Díaz que esté junto a él. Tras varias horas de lucha, la batalla no se decide, se enfrentan cuerpo a cuerpo mexicanos y franceses. Finalmente, los invasores se retiran mientras Zaragoza grita: "Tras ellos, a perseguirlos, el triunfo es nuestro". El ejército francés era considerado el mejor del mundo en ese tiempo, un ejército profesional, con la fama de invencible y de haber ganado batallas en Argelia (Legión Extranjera) y de haber entrado al Delta de río Mekong en la Indochina Francesa (hoy República Socialista de Vietnam), al mando del General Charles Ferdinand Letrille Conde de Lorencez, era derrotado y masacrado estrepitosamente. Los índígenas zacapoaxtlas, con machete y cuchillo en mano, los persiguieron y acabaron con muchos soldados franceses, suavos (tropa élite del ejército francés), belgas enviados por el Rey Leopoldo I padre de Carlota Amalia, que también formaban parte de la invasión. Cuando en Europa se supo la noticia de la derrota del ejército francés, el mejor del mundo en México, hubo incredulidad, asombro y estupor pero en Francia hubo dolor, terror por las historias que se contaban e histeria, dado que ningún país había humillado tanto a los franceses. Tenían 50 años que el ejército francés no era derrotado, dado que la última vez había sido en la Batalla de las Naciones (Waterloo) en el año 1815 con la derrota de Napoleón Bonaparte. Se elevaron voces de protesta por los intelectuales de ese país,´políticos que estaban en contra de la invasión a México y el pueblo en general. Muchos se preguntaban: "Que hacemos en México".
+
+El informe que el general Ignacio Zaragoza rindió sobre la Batalla de Puebla al Secretario de Guerra Miguel Blanco Múzquiz fue breve y significativo: "Las armas nacionales se han cubierto de gloria. Las tropas francesas se portaron con valor en el combate y su jefe con torpeza".El presidente Benito Juárez sería informado más tarde.</p>
+
+<img src="imagenes/porfirio.jpg" width="300" height="auto" alt="b">
+<p>José de la Cruz Porfirio Díaz Mori1 (Oaxaca de Juárez, Oaxaca, 15 de septiembre de 1830 - París, Francia, 2 de julio de 1915) fue un militar mexicano,2 que ejerció el cargo de presidente de México en siete ocasiones; la primera, del 24 de noviembre de 1876 al 6 de diciembre de 1876 (después del triunfo de la Revolución de Tuxtepec, desempeñando el cargo de forma interina); y la segunda vez, del 17 de febrero de 1877 al 5 de mayo de 1877. Nuevamente, ejerció el cargo en forma interina del 5 de mayo de 1877 al 30 de noviembre de 1880 (después de haber sido elegido presidente). Posteriormente, ejercería la presidencia del país de manera ininterrumpida entre 1884 y 1911. Fue un Mandatario que se mantuvo en la presidencia durante 35 años algo que un presidente de México nunca había hecho. Antes de asumir la presidencia fue un militar destacado que brilló por su participación en la Segunda Intervención Francesa en México. Combatió en la Batalla de Puebla, el Sitio de Puebla, la Batalla de Miahuatlán y en la Batalla de la Carbonera. Resaltaron sus acciones militares en el estado de Oaxaca, en donde organizó guerrillas contra los franceses. Porfirio Díaz, el 2 de abril de 1867, tomó Puebla, y el 15 de junio, recuperó para las tropas republicanas, la Ciudad de México. Tomó armas contra el gobierno federal en dos ocasiones: la primera contra Benito Juárez con el Plan de la Noria, y, posteriormente, contra Sebastián Lerdo de Tejada, elaborando el Plan de Tuxtepec. Tras el triunfo del segundo plan, Díaz asumió la presidencia. Entre sus logros más importantes se encuentra la introducción del Ferrocarril a México ya que él siempre tuvo un pensamiento futurista así que empezó a introducir la "Tecnología de ese tiempo".<br>
+La Batalla del 5 de Mayo el General Díaz confirma estas evaluaciones de su oficial superior. Y estando el General Zaragoza postrado en su lecho enfermo, Porfirio Díaz desobedeció las órdenes de no atacar a los franceses y movilizó a las fuerzas mexicanas para romper el Sitio. En su Parte de Guerra, Zaragoza mencionó la “tenacidad y valor” demostradas por el General Díaz al pelear contra los franceses. El enemigo fue atacado tres veces hasta que el Sitio finalmente se rompió y las fuerzas invasoras se echaron a correr. “Nuestros soldados se han cubierto de gloria en esta batalla” terminó diciendo Zaragoza.
+</p>
+   </center>
+   
+   <div data-role="main" class="ui-content" align="center">
+      <div style="width:40%;">
+      <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+        <li class="ui-first-child ui-last-child">
+        <a href="http://www.e-consulta.com/nota/2017-05-04/ciudad/destierra-puebla-sus-heroes-de-la-batalla-del-5-de-mayo" data-role="button">
+         <h2>Fuente de Info.</h2>
+         </a>
+         </li>
+         </ul>
+         </div>
+         </div>
+         
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+    <div>
+        <img src="res/android/mdpi.png" width="46" height="46">
+      </div>
+      <div>
+       <h4>Aplicacion Seis, DMM</h4>
+      </div>
+     </div>
+     </div>
+     
+     
+     
+     
+     
+     <div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+       <h1>Leyendas</h1>
+      </div>
+      <div data-role="content" align="center">
+      </div>
+      <center>   
+     <p>1.-Cuenta una vieja leyenda de Puebla que en la época de las invasiones francesas había en las cercanías de los fuertes un niño zacapoaxtla, los soldados le pidieron a aquel niño que subiera a un árbol para observar que tan lejos se encontraba el enemigo puesto que ellos no podían subir a los finos y frágiles arboles de la región. El niño aceptó ayudar gustoso, subió a un árbol y pudo ver avanzar a los franceses, entonces el pequeño contó cuantos eran, también contó que tipo de armamento traían y a qué velocidad avanzaban, los soldados agradecieron al niño y le pidieron que bajase pero el niño seguía aferrado al árbol dando aun más información, entonces comenzó la batalla y la balacera no se hizo esperar, una de las balas perdidas dio en el corazón del niño, el cual cayó y murió, los soldados ganaron la batalla ese día gracias a la información del pequeño, así que procedieron a darle cristiana sepultura y lo nombraron el héroe del día.</p>
+     <img src="imagenes/leyenda1.jpg" width="139" height="63" alt="5">
+     <p>2.-la historia de los Tres Juanes es contada como una leyenda en la Sierra Norte de Puebla, cuyos pobladores los describen como “los hijos de la montaña, que dieron patria y libertad” a la nación por su participación en la intervención francesa y en especial la Batalla del 5 de Mayo.
+
+Para los campesinos de la zona los Tres Juanes aún cabalgan entre la constante bruma de la serranía, en especial  por los pueblos de Tetela de Ocampó y Xochiapulco, tierras mágicas, como se les conoce; sin embargo en la historia oficial no son reconocidos, pese a que su existencia está documentada.
+
+Así, cada 5 de mayo, los Tres Juanes son recordados en sus lugares de origen, pues los pobladores dicen con orgullo que ellos les dieron honor por haber defendido a la patria ante la invasión extranjera, conformada por franceses, austriacos y belgas.
+
+Incluso se han tejido diversas leyendas sobre los poderes divinos de ellos, en especial los de Juan Francisco Lucas, el más humilde de los tres y con una instrucción educativa apenas de primaria.
+
+Los pobladores, señalan, como si aún lo tuvieran enfrente, que él poseía una mirada penetrante, que hacía sucumbir a quienes estaban en su contra, en este caso al enemigo extranjero, porque con sus compatriotas era humilde, sencillo y compartido. Además de ser dirigente militar era consejero espiritual.
+
+Así se convirtió en un líder nato que aprovecho la inconformidad campesina contra los hacendados para integrar  un grupo y enlistarse en el Ejercito liberal, que ya encabezaba Juan Nepomuceno Méndez.
+
+Los Tres Juanes estuvieron juntos por muchos años y lucharon por la misma causa: la libertad y el alto a la opresión; sin embargo, después de estar del lado de Benito Juárez rompieron con él para integrase al Plan de Ayutla lanzado por Porfirio Díaz en 1876.
+
+Al triunfar el régimen porfirista, los Tres Juanes ocuparon diversos cargos públicos en el estado de Puebla. Juan Crisóstomo Bonilla fue dos veces gobernador; Juan Nepomuceno Méndez, presidente interino de la República (1876 a 1877), además de ser gobernador de la entidad por dos períodos, y Juan Francisco Lucas fue nombrado Jefe Militar de la sierra y Jefe Político en Tetela de Ocampo. PCB</p>
+     <img src="imagenes/leyenda2.jpg" width="400" height="auto" alt="8">
+      </center>
+   
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+    <div>
+        <img src="res/android/mdpi.png" width="46" height="46">
+      </div>
+      <div>
+       <h4>Aplicacion Seis, DMM</h4>
+      </div>
+     </div>
+     </div>
+       
+</body>
+</html>
+
